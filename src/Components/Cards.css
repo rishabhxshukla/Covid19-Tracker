@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 236, 220);
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+/*---------------------------------*/
+
+
+/* HEADING */
+.title {
+    color: orange;
+    font-size: 5rem;
+    text-align: center;
+    text-underline-offset: 0.7rem;
+    text-shadow: 2px 2px 2px gainsboro;
+    text-decoration: underline lightseagreen;
+}
+
+
+/* CARDS CONTAINER */
+.container {
+    /* border: 2px solid red; */
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* INDIVIDUAL CARDS */
+.box {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    height: 28rem;
+    width: 38rem;
+    margin: 1.2rem;
+    border-radius: 1rem;
+    background-color: lightyellow;
+    box-shadow: 8px 8px 8px lightslategray;
+}
+
+
+/* BOX CONTENT */
+.box h1 {
+    color: #545454;
+    text-align: center;
+    font-size: 3rem;
+}
+.box h2 {
+    color: black;
+    text-align: center;
+    font-size: 3.5rem;
+}
+/*---------------------------------*/
+
+
+@media screen and (max-width: 600px) 
+{
+    html {
+        font-size: 7px;
+    }
+    .title, .container {
+        margin-top: 10px;
+    }
+    .box {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) 
+{
+    html {
+        font-size: 8px;
+    }
+    .title, .container {
+        margin-top: 10px;
+    }
+}
